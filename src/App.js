@@ -1,28 +1,55 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import GridPersonajes from './Componentes/GridPersonajes.js'
+import LionKing from './LionKing.jpg'
+import FormContacto from './Componentes/FormContacto.js'
+import { Divider } from '@material-ui/core'
+
+
+
+
+
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    };
+    this.setState = this.setState.bind(this);
+
+  }
+
+
+
+
+
   render() {
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <div
+       
+      >
+      
+  <img src={LionKing} className="App-Imagenes" />
+  <Divider />
+ 
+  <GridPersonajes></GridPersonajes>
+  <Divider />
+
+ <FormContacto></FormContacto>
+
+
+      </div > 
+
+
+
+
+
+
     );
   }
 }
 
 export default App;
+
